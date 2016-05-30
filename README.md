@@ -1,2 +1,3 @@
-# projectHound
-#this is a sample project to manage projects and the resources
+#projectHound
+#This is a sample project...
+#Work in progress
