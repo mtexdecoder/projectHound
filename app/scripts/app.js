@@ -17,9 +17,14 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider,$locationProvider) {
     $routeProvider
+      .when('/projects',{
+        controller:'ListviewCtrl',
+        templateUrl:'views/listview.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
+    $locationProvider.html5Mode(true);
   });

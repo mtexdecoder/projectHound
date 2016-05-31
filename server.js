@@ -1,7 +1,8 @@
 var express=require('express'),
 app=express();
 
-app.use(express.static('/app'))
+app.use(express.static('.'));
+app.use(express.static('app/'))
     .get('*',function(req,res){
-      res.sendFile('app/404.html',{root:__dirname});
+      res.sendfile('app/index.html');
     }).listen(3333);
